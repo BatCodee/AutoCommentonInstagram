@@ -17,14 +17,14 @@ driver.get("https://www.instagram.com/accounts/login/?source=auth_switcher")
 driver.implicitly_wait(5)
 
 def start():
-        driver.find_element_by_name("username").send_keys("gamerclutterhead")
-        driver.find_element_by_name("password").send_keys("Kratos123")
+        driver.find_element_by_name("username").send_keys("Your_username")
+        driver.find_element_by_name("password").send_keys("Your_password")
         pyautogui.press('enter')
         time.sleep(4)
         
         driver.find_element_by_xpath("/html/body/div[1]/section/nav/div[2]/div/div/div[2]/div/div/span[2]").click()
         time.sleep(4)
-        pyautogui.typewrite("#valorantgameplay")
+        pyautogui.typewrite("#search_hastag")
         pyautogui.press('tab')
         pyautogui.press('tab')
         pyautogui.press('enter')
