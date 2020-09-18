@@ -26,12 +26,12 @@ def start():
         driver.find_element_by_xpath("/html/body/div[1]/section/nav/div[2]/div/div/div[2]/div/div/span[2]").click()
         time.sleep(4)
         pyautogui.typewrite("#search_hastag") #put the hastag you want to search at search_hastag
-        pyautogui.press('tab')
-        pyautogui.press('tab')
-        pyautogui.press('enter')
+        #pyautogui.press('tab')
+        #pyautogui.press('tab')
+        #pyautogui.press('enter')
         
         
-        #driver.get("https://www.instagram.com/explore/tags/search_hastag/") #put the hastag you want to search at search_hastag
+        driver.get("https://www.instagram.com/explore/tags/search_hastag/") #put the hastag you want to search at search_hastag
         time.sleep(4)
         comment()
         
